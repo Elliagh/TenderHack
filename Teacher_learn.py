@@ -241,7 +241,7 @@ result_bayes = nb.fit(x_train, y_train)
 # In[25]:
 
 
-nb.score(x_test,y_test)
+print(nb.score(x_test,y_test))
 
 
 # In[26]:
@@ -250,7 +250,7 @@ nb.score(x_test,y_test)
 from sklearn.linear_model import LogisticRegression
 logreg = LogisticRegression()
 result_logreg = logreg.fit(x_train, y_train)
-logreg.score(x_test,y_test)
+print(logreg.score(x_test,y_test))
 
 
 # In[27]:
@@ -259,7 +259,7 @@ logreg.score(x_test,y_test)
 from sklearn import svm
 metodsvm = svm.SVC()
 result_svm = metodsvm.fit(x_train, y_train)
-metodsvm.score(x_test, y_test)
+print(metodsvm.score(x_test, y_test))
 
 
 # In[ ]:
