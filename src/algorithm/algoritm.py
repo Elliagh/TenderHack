@@ -1,8 +1,6 @@
 import openpyxl
-from razdel import tokenize
-from nltk.tokenize import word_tokenize
 
-from src import types
+from src.algorithm import types
 
 path = "Логи.xlsx"
 
