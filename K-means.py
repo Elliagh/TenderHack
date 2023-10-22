@@ -3,12 +3,9 @@ import chardet
 import nltk
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.naive_bayes import GaussianNB
-from sklearn.model_selection import train_test_split
-from sklearn import svm
-from Helpers import Tokens as tokens
-from sklearn.linear_model import LogisticRegression
 import numpy as np
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
 
 with open('Resources\Logs.csv', 'rb') as f:
     enc = chardet.detect(f.read())
@@ -28,28 +25,9 @@ for text_line in data['log']:
     new_log.append(text)
 count = CountVectorizer()
 values = count.fit_transform(new_log).toarray()
-types = []
-not_found_str = []
-for text_line in data['log']:
-    exist_token = False
-    text_line = text_line.lower()
-    dict_token = {}
-    for token in tokens.tokens:
-        if token in text_line:
-            exist_token = True
-            types.append(tokens.tokens[token])
-            break
-    if exist_token == False:
-        print(text_line)
-X = values
-Y = types
-x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, random_state = 38)
-nb = GaussianNB()
-result_bayes = nb.fit(x_train, y_train)
-print(nb.score(x_test,y_test))
-logreg = LogisticRegression()
-result_logreg = logreg.fit(x_train, y_train)
-print(logreg.score(x_test,y_test))
-metodsvm = svm.SVC()
-result_svm = metodsvm.fit(x_train, y_train)
-print(metodsvm.score(x_test, y_test))
+
+print(values[0])
+model = KMeans(n_clusters=19)
+model.fit(values)
+print(model.labels_)
+print(model.cluster_centers_)
