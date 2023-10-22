@@ -1,0 +1,178 @@
+id;create_date;log
+6fde2b00f7771d4184531075f575a7ad;09.10.2023 10:00;'', hexadecimal value 0x02, is an invalid character.
+8802840e9251e91593ef8227ffd2737f;15.10.2023 4:10;An error has occurred in the task of cleaning SkuOfferMatchResult
+c9bc1e41f9f7bc520fc9fdd58a9ba652;12.10.2023 3:40;An error occurred during stat collection
+d144d0e25706518008a050fb713b26f0;11.10.2023 11:30;An error occurred using a transaction.
+1a477bb5ad80b3f912a53a6a32b9f128;09.10.2023 4:01;An exception has occurred in the task of verification soon expire user machine readable powers of attorney
+a8c064cea3793cbc25117db42bfefc0d;15.10.2023 7:26;"An exception occurred in the database while saving changes for context type 'Pp2.Models.CsspContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Commit()
+   at Microsoft.Data.SqlClient.SqlTransaction.Commit()
+   at System.Data.Common.DbTransaction.CommitAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Pp3.Dal.Core.Transactions.SqlServerEventSupportedTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at EntityFramework.Exceptions.Common.ExceptionProcessorStateManager`1.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:4e62625a-c646-4f4a-8826-8ff1ee72b8b4
+Error Number:-2,State:0,Class:11"
+3a03ac725b4256b2c5d6df918b329ada;11.10.2023 9:24;"An exception occurred while iterating over the results of a query for context type 'Pp2.Models.CsspContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A severe error occurred on the current command.  The results, if any, should be discarded.
+Operation cancelled by user.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:12dcf75a-23f9-4621-be50-52c24fcfcf45"
+0cda829d1fc6824e9fee01586ef9704d;15.10.2023 3:55;An exception was thrown during execution of OfferExpirationNotificationJob
+0e70cb561a4c275c7038767ee2dc0f4c;15.10.2023 5:38;An unhandled exception has occurred while executing the request.
+4a43f889df76f063aee604a05997b929;15.10.2023 6:01;"Connection ID ""14411518834966118972"", Request ID ""8001c23d-0006-c800-b63f-84710c7967bb"": An unhandled exception was thrown by the application."
+a1d4434749d8634e86b644779c712cf8;09.10.2023 1:01;Could not execute command: DELETE FROM [dbo].[JobStatus] WHERE TypeName <> 'Granit.Cssp.Jobs.Sku.SkuImportJob' AND CreateDate <= DATEADD(DAY,-30, GETDATE())
+1e572b674f576143ad2d6fde97f9b54f;09.10.2023 0:31;Could not execute query: exec dbo.GetContractActionsForAutoFullDeny
+bb7841cd246c7c46b04ca8794958e1de;12.10.2023 0:05;Could not synchronize database state with session
+5c9cfe1cab4ef182b1b51a13cd8bb78f;09.10.2023 9:45;Exception occurred while processing message.
+2241a560d2ce557f3c486bba608f9163;13.10.2023 2:39;Exception SendCommand command: 005ae666-3bb5-42eb-a64e-5ed98eab2d86, type: 55493482-0ae4-4bb2-885c-a7033beff131
+d02937a53689dd1e5af046e3f76d3331;09.10.2023 14:41;Exception while Executing Pp3.Common.Bl.FileStorage.Services.DiskFileStorageProvider:GetFileAsync+fileIdString,ctCancellationToken, args: (948B39FAD75E9F72F4FEB4343058BD8D,CancellationToken)
+35ef8d7f00668b47ab5ba5a3def0e92d;15.10.2023 3:54;Execution error, job: Granit.Cssp.Jobs.Cart.DeleteInvalidCartsJob, key: 1dcc4022-12df-45a0-9c76-f9be350ba48b, args: {}
+231c79e539fd4e44b3ef7058b6c5b634;09.10.2023 0:31;Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+288076321b24988356b8eb21f88eb99f;11.10.2023 4:03;"Failed executing DbCommand (109ms) [Parameters=[], CommandType='Text', CommandTimeout='600']
+DELETE [f]
+FROM [FileData] AS [f]
+WHERE [f].[FileHash] IN ('0412834777A21AA276D2DB536603FF6C', '0A39F2483B95DB8694E61B851EE60A5A', '14CD5EEFDB6EC46F1C21BE76826CB8B0', '1A55774750DA243702D406826F823757', '257DBEF9C761A204B713B806C869060D', '29159CF5D80E7A7FD264512226DC7073', '41DF8A9417FDCB3A442EE54413022546', '4216701400368A4D7F4541EC85B07781', '4AC239A0965C9254A2B66785C4EEB911', '4D9E43458E1873738B15EDEEC2BF8DCB', '5F07E598E4DE2E0C5A3C639CE4EB7DF1', '6064F0AD2E03B309136E2BFA98FDC7C6', '6B60D1E94F0BF9C3BDE0BE59146CD3B1', '715E341AC3F8CC4F2B9D375452335147', '7CE4472498E1B7841F55C9928337D0D7', '847D3DBA093E3E5299650DD5B53EBFC4', '883324E7FE842B18CF2A9F50BDB95B29', '8C015B642D49EE2DC6ABE95A7C81B7BC', '8ECA26ADC7D3C388FC6EDB8D19418247', '9458843573B20CBA92AF8C0F739E55C8', '97F53F719FDBCC134B1222A024E37030', 'ABF1538A8E75CAF5A8B36F229C1C3032', 'B2C4CE6AF74CBFAF71FCF5C01BF92DF4', 'C6B705758DEB80A5FE08C837BDA854F7', 'D04F19CB3DE4C939676E2922D742DCA0', 'D3C5193C5E0FD5E4CEC5711610CE2763', 'D97C725534DB7174A459A7ABD7DA0AD8', 'D9B6C2628937272A9780822813620860', 'DEBE804374CDB1605E2CBB966D24C147', 'E6E2C54F02712D0531F50D682EB276C6', 'E9EE738F8C43B125DC839181B55BEBEA', 'F11C5B5C5E7D975A3AD8CBA58D0EE196', 'F985F64826A7F9E2F73CCA586F263161', 'F9A6B38849599C0FF85F25E3473BDB61', 'FFF5058893B55D1CB3922173E96758DE')"
+422d4f922b399844a18890337f209cfd;11.10.2023 0:37;"Failed to execute query batch: [SELECT count(*) as y0_ FROM SkuChangeRequest this_ inner join Sku sku1_ on this_.SkuId=sku1_.Id inner join SpUser spuser2_ on  ( spuser2_.SystemUserId = this_.CreateUserId ) WHERE this_.RequestType = ? and this_.StateId = ? and sku1_.EntityState = ? and (sku1_.CreateDate >= ?) and exists (SELECT this_0_.Id as y0_ FROM Region this_0_ inner join Company comp1_ on  ( comp1_.RegionId = this_0_.Id ) WHERE comp1_.Id = spuser2_.CompanyId and not ((this_0_.TreePathId like ? or this_0_.TreePathId like ?)));
+]"
+6bd2f9c2ed52d057fc7e6e9d50dd7c3a;11.10.2023 15:44;Failed to invoke hub method 'joinGroup'.
+7e44572f3b7fd74b90e05acf5eb627bc;15.10.2023 2:20;Immediate job: 0059eb18-2c6d-4998-b4e7-642dea6d9a8e execution failed. Trying to enqueue this job
+fc5126167def244ea9fb2041a4be2de3;09.10.2023 1:07;job error
+6e6a52fda7b6a668cf63dc37be8e9f3a;13.10.2023 10:01;Kaluga workflowId: 05c81312-f537-4417-b4a2-9ce9f4e701bd, Unable to get workflow documents, SessionId: 05594486-4e34-43cc-a7f7-a78a6b0c3d44
+a1d4434749d8634e86b644779c712cf8;09.10.2023 1:01;"NHibernate.Exceptions.GenericADOException: could not execute native bulk manipulation query:DELETE FROM [dbo].[JobStatus] WHERE TypeName <> 'Granit.Cssp.Jobs.Sku.SkuImportJob' AND CreateDate <= DATEADD(DAY,-30, GETDATE())[SQL: DELETE FROM [dbo].[JobStatus] WHERE TypeName <> 'Granit.Cssp.Jobs.Sku.SkuImportJob' AND CreateDate <= DATEADD(DAY,-30, GETDATE())] ---> System.Data.SqlClient.SqlException: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(DbCommand cmd)
+   at NHibernate.Engine.Query.NativeSQLQueryPlan.PerformExecuteUpdate(QueryParameters queryParameters, ISessionImplementor session)
+   --- End of inner exception stack trace ---
+   at NHibernate.Engine.Query.NativeSQLQueryPlan.PerformExecuteUpdate(QueryParameters queryParameters, ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.ExecuteNativeUpdate(NativeSQLQuerySpecification nativeQuerySpecification, QueryParameters queryParameters)
+   at NHibernate.Impl.SqlQueryImpl.ExecuteUpdate()
+   at Granit.Cssp.Jobs.JobStatus.CleanOldJobStatusesJob.<>c__DisplayClass4_0.<Execute>b__0(DataScope ds) in D:\pp2\source\Pp\Granit.Cssp\Jobs\JobStatus\CleanOldJobStatusesJob.cs:line 29
+   at Granit.Core.Data.DataScope.Execute(Action`1 action, Boolean requiresNew, Boolean autoCommit, SessionMode sessionMode, String name, Boolean useInterceptors, IsolationLevel il) in D:\pp2\source\Granit\Granit.Core\Data\DataScope.cs:line 548
+   at Granit.Cssp.Jobs.JobStatus.CleanOldJobStatusesJob.Execute(IJobContext context, EmptyArgument args) in D:\pp2\source\Pp\Granit.Cssp\Jobs\JobStatus\CleanOldJobStatusesJob.cs:line 27"
+e49f11d431954f44a3bb016395676860;12.10.2023 16:40;OpComplete: 0dfd4bc2-51d7-4d9d-8786-34a99d02f68b errors IncorrectSupplierSignature => System.String[]
+4f4830735dfc264fb40d1424e3e02bb2;09.10.2023 0:00;Pp3.Contracts.Dto.Contract.Action.ContractActionException: Действие по автоматическому отказу не разрешено
+1679bbd03bd072da487ebdf6b9119dad;09.10.2023 13:39;Response already has started, cannot send ErrorDetails object
+0ce94fe2de84e14b3eee0005e7cb7a6e;11.10.2023 9:43;R-FAULT rabbitmq://10.207.4.1/dev/GranitCsspConsumersResetUserCache 79240000-56a2-0050-7117-08dbca24eb1b Pp3.PublicApi.Shared.SystemUsers.Commands.ResetUserCacheCommand Granit.Cssp.Consumers.ResetUserCacheConsumer(00:00:00.0146239)
+8578a20e2ebd53eaa5e0c9ac2901a43c;09.10.2023 5:16;S-FAULT rabbitmq://10.207.4.1:0/dev/Pp3.Contracts.Dto.Internal:ClassifierImportResultEvent--Pp2.Models.Company:CompanyBlock-- 79240000-56a2-0050-01fb-08dbc86dba04 Pp3.Contracts.Dto.Internal.ClassifierImportResultEvent<Pp2.Models.Company.CompanyBlock>
+c3a26e908605084180b05f77c367a8a0;09.10.2023 0:00;"System.InvalidOperationException: У прямой закуки id=$14101044 отстуствует ФЗ
+   at Granit.Cssp.Orm.Interceptors.PurchaseRequestInterceptor.Validate(PurchaseRequest purchaseRequest) in D:\pp2\source\Pp\Granit.Cssp\Orm\Interceptors\PurchaseRequestInterceptor.cs:line 55
+   at Granit.Cssp.Orm.Interceptors.PurchaseRequestInterceptor.OnFlushDirty(Object entity, Object id, Object[] currentState, Object[] previousState, String[] propertyNames, IType[] types) in D:\pp2\source\Pp\Granit.Cssp\Orm\Interceptors\PurchaseRequestInterceptor.cs:line 26
+   at Granit.Core.Data.NHibernate.Interceptors.CompositeInterceptor.<>c__DisplayClass3_0.<OnFlushDirty>b__0(IInterceptor inter) in D:\pp2\source\Granit\Granit.Core\Data\NHibernate\Interceptors\CompositeInterceptor.cs:line 38
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Granit.Core.Data.NHibernate.Interceptors.CompositeInterceptor.OnFlushDirty(Object entity, Object id, Object[] currentState, Object[] previousState, String[] propertyNames, IType[] types) in D:\pp2\source\Granit\Granit.Core\Data\NHibernate\Interceptors\CompositeInterceptor.cs:line 43
+   at NHibernate.Event.Default.DefaultFlushEntityEventListener.InvokeInterceptor(ISessionImplementor session, Object entity, EntityEntry entry, Object[] values, IEntityPersister persister)
+   at NHibernate.Event.Default.DefaultFlushEntityEventListener.HandleInterception(FlushEntityEvent event)
+   at NHibernate.Event.Default.DefaultFlushEntityEventListener.ScheduleUpdate(FlushEntityEvent event)
+   at NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   at NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   at NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at Granit.Core.Data.DataScope.Dispose() in D:\pp2\source\Granit\Granit.Core\Data\DataScope.cs:line 411"
+5fc7fce6ac7f83c731289d80328321f8;16.10.2023 12:12;"The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions."
+8bd6012c822ac74997bc745c862394af;09.10.2023 6:00;"The handle is invalid.
+"
+231c79e539fd4e44b3ef7058b6c5b634;09.10.2023 0:31;The wait operation timed out
+db08ae2338d710ca198422534e2dd81e;09.10.2023 14:00;Unable to execute command: OperationComplete
+9bac4b15d72223594e98a50f68d768ae;09.10.2023 10:00;Unable to get data
+6424198940e01f33f8b596fa9fe7391c;09.10.2023 0:00;Unable to get integration token
+fd1f2e9d27fb5e50d5a29030393470f8;12.10.2023 17:55;Unable to parse request, query: ?%7B
+2241a560d2ce557f3c486bba608f9163;13.10.2023 2:39;Unable to process command: 005ae666-3bb5-42eb-a64e-5ed98eab2d86, type: 55493482-0ae4-4bb2-885c-a7033beff131
+c3a26e908605084180b05f77c367a8a0;09.10.2023 0:00;Unable to process OnFlushDirty interceptors
+c6014113a7ba1427acedb5296a0c63cb;12.10.2023 15:49;Unable to send AuctionFinished OpId:4c85a099-9744-4043-99fe-38a62c5aa71a
+ccd4b270fea2b9e9ef1e3835ae94b115;11.10.2023 11:49;Unable to send company reg request
+d02937a53689dd1e5af046e3f76d3331;09.10.2023 14:41;Unable to send contract execution: 13928949, sessionid: c9128e89-2f61-4d8a-a69e-aa722add5f9c
+2241a560d2ce557f3c486bba608f9163;13.10.2023 2:39;Unable to send CreateAuction in external system OpId:005ae666-3bb5-42eb-a64e-5ed98eab2d86
+bb7e6da5d2dfd740d3cda284e1643911;11.10.2023 11:27;Unable to SendResult CreateAuction OpId:2bb5b67e-a574-4a50-bf42-a8fb97514b5a
+226292fc5105b8820bbaf40f15ec49bc;12.10.2023 2:20;Unable to set failed for command: 1c8734fc-2fbf-4b63-9da8-9718aaf5bdb6, type: e5cca3a7-d738-4b7c-928a-4c147db8e00b
+d79550928f19cd4b94f08a6aa44cf3b6;09.10.2023 14:06;Unable to upload files
+b3b16fc1dd1dfdad41fa2ecd054ec7d0;09.10.2023 0:01;Unable to verify and save signature
+3268829f31dc04a742f9467659385063;09.10.2023 9:34;Unexpected error occured
+6b00ca4050d7758a353ac57748858b88;12.10.2023 11:14;Unhandled error during Org.Keycloak.Events.Admin.AdminEvent consumer execution
+f125b7ded52408d820fa57b95ed70d18;12.10.2023 16:15;Unhandled error during Pp3.Common.Events.StateableEntityChangedEvent consumer execution
+c89e6b3d9f9318159579297ffb54fda2;11.10.2023 11:48;Unhandled error during Ru.SupplierPortal.Dto.UserDeleteCertificateEvent consumer execution
+3268829f31dc04a742f9467659385063;09.10.2023 9:34;Unhandled exception in action execution was thrown, reverting transaction
+5797e493c9169c7222cfa7227d56d0d1;09.10.2023 9:00;Архив (УАС) не загрузился/не загружался.
+7806110f4d7bc97c179b55f0f4984206;09.10.2023 21:12;Данные не могут быть обработаны по причине: Данный пакет уже был импортирован. PackageGuid : 03001a006fea2700-38870960, PackageDateTime : 09.10.2023 21:11:11 +00:00
+e1b16535df5ef1fc81fce43808ee2efe;15.10.2023 2:05;Данные не могут быть проимпортированы по причине: Данный пакет уже был импортирован. PackageGuid : 36784198, PackageDateTime : 15.10.2023 2:01:32 +03:00
+a8c064cea3793cbc25117db42bfefc0d;15.10.2023 7:26;Для команды интеграции 00fa120e-fbe0-4d7b-bce9-72df19669ab3 невозможно записать текст ошибки в поле LastException
+6921994c0fe8d8f152b7ef0d7384f6a7;11.10.2023 16:45;МЧД: подписание по старому сертификату 2086295942
+01821e2d6585c83ce02bad78a1ee06ca;09.10.2023 8:45;Не найден КПГЗ с Id: 38870541. Запрашиваем дополнительно
+c9a40d3f70432854af6465afc2d8b686;09.10.2023 6:30;Не найдена компания с идентификатором: 1148406
+3fee0cbd72aab2a8bd20477a987833ec;11.10.2023 14:53;Не удалось скачать файл из ЕИС по ссылке: https://eis5.roskazna.ru/epz/contract/integration/viewXml.html?guid=35B986BC925D4183B6C4220BEA93E976
+9bac4b15d72223594e98a50f68d768ae;09.10.2023 10:00;"Невозможно запросить данные из УАС для ""Ежедневная выгрузка контрактов и закупок"" по причине: Unable to get data"
+2a8f905c11dd2e28d752923b809ac040;11.10.2023 15:59;"Необработанная ошибка валидации МЧД попытка добавления дубликата'{""MachineReadablePowerOfAttorneyFileStorageId"":2086295916, ""UserCompanyId"":31563053, ""InitiatorSystemUserId"":20048012, ""InitiatorSpUserId"":19696828}'"
+8522eb46c77c5d9a1f9bab0e852de8ab;09.10.2023 13:22;Ошибка авторизации в интеграционном апи. Login: 611512382b274209898df6391e2b5f2c, Password: a6285a6db5ec4c84857f016ae698844e962197b6c8104568a00bb93defd8510b
+c9a40d3f70432854af6465afc2d8b686;09.10.2023 6:30;Ошибка актуализации блокировок компании. CompanyId: 1148406
+19cc0a580afc246fcc86b78b2c06484d;09.10.2023 6:01;Ошибка выполнения подписчика на событие завершения применения транзакции <HandleOutbound>b__0
+967862be5f204042eb7a2f9df640507b;16.10.2023 12:26;Ошибка доступа к сервису капчи
+9bac4b15d72223594e98a50f68d768ae;09.10.2023 10:00;"Ошибка запроса данных из УАС для ""Ежедневная выгрузка контрактов и закупок"""
+30cdb160e0c51f3591f4a2f406f5a3df;09.10.2023 11:57;Ошибка запроса получения информации об операции интеграции: 148a1bde-3a90-48cf-ab7a-adca1aa67df9.
+0460d86e01b3ebd357b7d59862cbd8a0;09.10.2023 6:01;Ошибка запроса статуса самозанятого
+80df4b78086a9e408d08069e1b1cbf16;12.10.2023 5:46;Ошибка индексации оферт
+adcef5d317057946bac2ee0a390874d1;09.10.2023 0:00;Ошибка обработки запроса на регистрацию/изменение данных компании id: 23264576 type: 'Customer'
+84490752898db5afeca10f75b2decb75;09.10.2023 0:35;Ошибка обработки события изменения сброса кеша пользователя bf_test@test.test
+f125b7ded52408d820fa57b95ed70d18;12.10.2023 16:15;"Ошибка обработки события измнения сущности Need. Данные события: {""correlationId"":""45fbd566-1a92-4468-adc3-9430c39206ae"",""entityId"":""3564787"",""entityType"":""a22c4de6-71d3-4834-ab94-94997c5c34b4"",""stateBeforeChange"":20000006,""stateAfterChange"":20000002} "
+3396a8c63aa8e570d129d5ae68b8e12f;11.10.2023 15:43;Ошибка обращения к api внешней системы ЕГРЮЛ ДИТ. Код ошибки: NotFound. Запрос: https://papi.mos.ru/api/egrulv2/1.0/egrul?inn=2132132132
+4b4a865c2d50cea6889777c8c617de79;09.10.2023 5:15;Ошибка получения файлов из каталога nsi ЕИС для импорта справочника 0.
+565f4d38e7a91bedbe67007941df4166;11.10.2023 10:45;Ошибка при вызове сервиса ЕИС
+4473d81f304ebf4a9e0697d67f3a81ef;16.10.2023 12:19;Ошибка при запросе списка интеграционного обмена.
+4ba1e131fd49c2ff63c7ec5fe92e4684;12.10.2023 14:16;"Ошибка при обработке запроса '{""SupplierCompanyId"":31547699, ""ContractRegisterNumber"":""1961015211323000009"", ""SupplierEruzId"":""21000068""}'"
+e6d2b3936405d14ebdde8628813c6906;09.10.2023 15:05;"Ошибка при обработке события '{""ContractActionId"":113701963}'"
+e868e5d07fd9833a89ab91ee7cf92f91;13.10.2023 18:02;Ошибка при обращении к сервису ЕИС для запроса информации о контракте registerNumber 19610152113230000060003
+565f4d38e7a91bedbe67007941df4166;11.10.2023 10:45;Ошибка при обращении к сервису ЕИС для проверки токена
+fb98f6c7f929cbada9db30d073713997;11.10.2023 9:10;Ошибка при опросе очереди результатов подписания поставщиком в ЕИС
+2bcbdee35ac1fd43b5076e8823944333;12.10.2023 1:21;Ошибка при поиске неиндексированных Auction
+686b706ef0ea04392364534918b74fcf;15.10.2023 4:19;Ошибка при расчёте достижений компании.
+618865724c6b5659f6f3972640c58383;15.10.2023 6:01;Ошибка публикации события об окончании срока действия сертификата пользователя: CorrelationId: cf340f38-398d-4fd7-a52d-3bb38d6b3aa0, SpUserId: 19696503, CertificateId: 18995668, CheckDate: 15.10.2023 0:00:00, ValidTo: 14.10.2023 9:51:02
+9bfac93e472649ebe5cb0090c09385d9;15.10.2023 2:01;Проверка приглашений для 1bf4fe64-42a0-46f6-92ad-82db1faf11be: ошибка
+0683348394715a6776a1d7b85c870365;13.10.2023 3:01;"Произошла ошибка импорта: ""Не найден ОКПД2 с кодом  14.12.21.120 для записи с ExternalId=1039\56\2023"" для ExternalId=1039\56\2023. Пропускаем запись. Проимпортировано 0 записей. "
+27c475176b7ffa928e62b306a37f6ebf;12.10.2023 6:22;Реиндексация компаний завершилась с ошибкой
+5829979e17f00647aea2941809eb952a;11.10.2023 16:45;"Событие обработано с ошибками: [{""FieldCode"":null,""ErrorCode"":null,""ErrorMessage"":""Не найдена КС с Id 8918835 в целевом статусе""}]"
+1d03c664a1bcb004cbb357d38b7aed0d;09.10.2023 16:04;Файл с fileId: 1DFA36B6E82A08340FF4EB8CBECBAC56, filePath://10.207.4.10/Cssp/Storage\1D\FA\1DFA36B6E82A08340FF4EB8CBECBAC56 отстутствует на диске
