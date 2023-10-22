@@ -26,8 +26,8 @@ for text_line in data['log']:
 count = CountVectorizer()
 values = count.fit_transform(new_log).toarray()
 
-print(values[0])
+#print(values[0])
 model = KMeans(n_clusters=19)
 model.fit(values)
 print(model.labels_)
-print(model.cluster_centers_)
+#print(model.cluster_centers_[0])
