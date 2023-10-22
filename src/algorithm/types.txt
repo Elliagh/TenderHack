@@ -1,0 +1,19 @@
+s-fault: ошибка работы с контрактом rabbitmq
+r-fault: ошибка запроса rabbitmq
+invalid, validate: ошибка валидации
+an error, exception, unhandled, failed, ошибка, job error, errors: ошибка обработки исключений
+database, query, delete, select, insert: ошибка с работой базы данных
+fileStorage, upload files, файл: ошибка работы с файлами
+pp3.contracts, contracts: ошибка работы с контрактами
+timeout: ошибка задержки
+already: ошибка уже исполнено
+verify: ошибка верификации
+unable to get, unable to send, unable to set, не загрузился, Ошибка запроса, обращении, опросе: ошибка запроса
+unable to execute, выполнения: ошибка выполнения
+unable to parse: ошибка парсинга
+unable to process, ошибка обработки: ошибка обработки
+проимпортированы, импорта: ошибка импорта
+не найден: not found
+ошибка доступа : ошибка доступа
+ошибка авторизации : ошибка доступа
+ошибка актуализации : ошибка актуализации
