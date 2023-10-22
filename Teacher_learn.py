@@ -70,11 +70,3 @@ plt.plot(res_log_reg)
 plt.show()
 
 
-def divide_on_levels(vector, max_value, min_value, step):
-
-    for point in vector:
-        if point > max_value and point < min_value:
-            continue
-        else:
-            floor = (point - min_value) // step
-
